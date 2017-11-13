@@ -1,0 +1,9 @@
+applications:
+- name: policy_management_service  
+  disk_quota: 1G
+  instances: 1
+  memory: 768M
+  routes:
+  - route: piyali-policy-mgmt.cfapps.io
+  stack: cflinuxfs2
+  path: target/policy-management-service-0.1.0.jar
